@@ -23,8 +23,8 @@ by the commands below.
 
 ## Normalized inputs
 
-The ranking-transfer runner expects the following files in the directory given
-by `PFS_REPRO_DATA` (or `reproducibility/data` by default):
+The ranking-transfer runner expects the following files in the input directory
+passed with `--input` (for example, `reproducibility/data`):
 
 `predictive_losses.csv`: `fold,candidate,loss`;
 `policy_metrics.csv`: `fold,policy,alpha,candidate,event_recall,feasible`.
