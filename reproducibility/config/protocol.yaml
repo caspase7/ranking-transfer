@@ -1,0 +1,12 @@
+predictive_criterion: scenario_equal_weighted_failure_within2_binary_nll
+calibration_role: selection_calibration
+evaluation_role: selection_evaluation
+candidates: [d1, d2, d4, d8, d16]
+warning_policies: [first_crossing, two_consecutive, cumulative_window3]
+target_fpr: [0.01, 0.02, 0.05, 0.10]
+policy_feasibility: selection_fpr <= target_fpr + 0.02
+policy_tie_break: smaller_dimension
+predictive_tie_break: smaller_dimension
+strongest_margin_pairs_per_fold: 3
+grouped_resampling_unit: scenario_or_task_group
+held_out_selection: outer_test_groups
